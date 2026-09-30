@@ -12,14 +12,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
     <style>
 
-        /* =========================================
+        /* =====================================================
            RESET
-        ========================================= */
+        ===================================================== */
 
         * {
             margin: 0;
@@ -40,9 +42,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            ANIMATED BACKGROUND
-        ========================================= */
+        ===================================================== */
 
         .background {
             position: fixed;
@@ -65,6 +67,7 @@
             border-radius: 50%;
             filter: blur(90px);
             opacity: 0.35;
+
             animation: float 10s ease-in-out infinite;
         }
 
@@ -72,7 +75,9 @@
         .orb-1 {
             width: 300px;
             height: 300px;
+
             background: #00ff9d;
+
             top: -100px;
             left: -100px;
         }
@@ -81,9 +86,12 @@
         .orb-2 {
             width: 250px;
             height: 250px;
+
             background: #0077ff;
+
             right: -80px;
             top: 35%;
+
             animation-delay: -3s;
         }
 
@@ -91,9 +99,12 @@
         .orb-3 {
             width: 300px;
             height: 300px;
+
             background: #00d084;
+
             left: 30%;
             bottom: -180px;
+
             animation-delay: -6s;
         }
 
@@ -108,17 +119,20 @@
             50% {
                 transform: translate3d(30px, -40px, 0);
             }
+
         }
 
 
-        /* =========================================
+        /* =====================================================
            PARTICLES
-        ========================================= */
+        ===================================================== */
 
         .particles {
             position: fixed;
             inset: 0;
+
             pointer-events: none;
+
             z-index: -2;
         }
 
@@ -160,26 +174,30 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            MAIN CONTAINER
-        ========================================= */
+        ===================================================== */
 
         .container {
+
             width: min(100% - 30px, 680px);
+
             margin: auto;
+
             padding: 45px 0 30px;
         }
 
 
-        /* =========================================
+        /* =====================================================
            TOP BADGE
-        ========================================= */
+        ===================================================== */
 
         .top-badge {
 
             width: fit-content;
 
             margin: auto;
+
             margin-bottom: 30px;
 
             padding: 9px 17px;
@@ -241,22 +259,25 @@
                 transform: scale(1);
                 opacity: 1;
             }
+
         }
 
 
-        /* =========================================
-           PROFILE
-        ========================================= */
+        /* =====================================================
+           PROFILE SECTION
+        ===================================================== */
 
         .profile-section {
+
             text-align: center;
+
             padding: 20px 0 30px;
         }
 
 
-        /* =========================================
+        /* =====================================================
            PROFILE IMAGE
-        ========================================= */
+        ===================================================== */
 
         .profile-image-wrapper {
 
@@ -285,7 +306,8 @@
                     #00ff9d
                 );
 
-            animation: rotateRing 6s linear infinite;
+            animation:
+                rotateRing 6s linear infinite;
         }
 
 
@@ -342,6 +364,7 @@
             height: 30px;
 
             display: flex;
+
             align-items: center;
             justify-content: center;
 
@@ -356,19 +379,19 @@
             z-index: 5;
 
             border: 4px solid #050505;
-
         }
 
 
-        /* =========================================
+        /* =====================================================
            TITLE
-        ========================================= */
+        ===================================================== */
 
         h1 {
 
             margin-top: 25px;
 
-            font-size: clamp(27px, 6vw, 42px);
+            font-size:
+                clamp(27px, 6vw, 42px);
 
             font-weight: 800;
 
@@ -383,8 +406,8 @@
                 );
 
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
 
+            -webkit-text-fill-color: transparent;
         }
 
 
@@ -421,15 +444,16 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            STATS
-        ========================================= */
+        ===================================================== */
 
         .stats {
 
             display: flex;
 
             justify-content: center;
+
             align-items: center;
 
             gap: 30px;
@@ -471,6 +495,7 @@
         .stat-divider {
 
             width: 1px;
+
             height: 40px;
 
             background:
@@ -482,9 +507,9 @@
         }
 
 
-        /* =========================================
-           MAIN CTA BUTTON
-        ========================================= */
+        /* =====================================================
+           MAIN TELEGRAM BUTTON
+        ===================================================== */
 
         .main-button {
 
@@ -493,6 +518,7 @@
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             gap: 12px;
@@ -521,7 +547,8 @@
             letter-spacing: 0.5px;
 
             box-shadow:
-                0 12px 40px rgba(0,255,157,0.18);
+                0 12px 40px
+                rgba(0,255,157,0.18);
 
             transition:
                 transform 0.25s ease,
@@ -536,7 +563,8 @@
             transform: translateY(-4px);
 
             box-shadow:
-                0 18px 50px rgba(0,255,157,0.3);
+                0 18px 50px
+                rgba(0,255,157,0.3);
         }
 
 
@@ -570,9 +598,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            FEATURES
-        ========================================= */
+        ===================================================== */
 
         .features {
 
@@ -603,7 +631,9 @@
                     rgba(255,255,255,0.015)
                 );
 
-            border: 1px solid rgba(255,255,255,0.08);
+            border:
+                1px solid
+                rgba(255,255,255,0.08);
 
             backdrop-filter: blur(15px);
 
@@ -625,11 +655,13 @@
         .feature-icon {
 
             min-width: 48px;
+
             height: 48px;
 
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             border-radius: 13px;
@@ -659,9 +691,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            BOTTOM CTA
-        ========================================= */
+        ===================================================== */
 
         .bottom-cta {
 
@@ -677,7 +709,9 @@
 
             border-radius: 20px;
 
-            border: 1px solid rgba(0,255,157,0.12);
+            border:
+                1px solid
+                rgba(0,255,157,0.12);
 
             background:
                 linear-gradient(
@@ -736,9 +770,9 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            FOOTER
-        ========================================= */
+        ===================================================== */
 
         footer {
 
@@ -754,15 +788,16 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            MOBILE
-        ========================================= */
+        ===================================================== */
 
         @media (max-width: 500px) {
 
             .container {
 
-                width: min(100% - 24px, 680px);
+                width:
+                    min(100% - 24px, 680px);
 
                 padding-top: 30px;
             }
@@ -771,6 +806,7 @@
             .profile-image-wrapper {
 
                 width: 125px;
+
                 height: 125px;
             }
 
@@ -809,38 +845,43 @@
         }
 
     </style>
+
 </head>
 
 
 <body>
 
 
-    <!-- =========================================
-         ANIMATED BACKGROUND
-    ========================================== -->
+    <!-- =====================================================
+         BACKGROUND
+    ====================================================== -->
 
     <div class="background">
 
         <div class="orb orb-1"></div>
+
         <div class="orb orb-2"></div>
+
         <div class="orb orb-3"></div>
 
     </div>
 
 
-    <!-- PARTICLES -->
+    <!-- Animated particles -->
 
     <div class="particles"></div>
 
 
-    <!-- =========================================
-         MAIN CONTENT
-    ========================================== -->
+    <!-- =====================================================
+         MAIN CONTAINER
+    ====================================================== -->
 
     <main class="container">
 
 
-        <!-- TOP BADGE -->
+        <!-- =================================================
+             TOP BADGE
+        ================================================== -->
 
         <div class="top-badge">
 
@@ -851,24 +892,32 @@
         </div>
 
 
-        <!-- =========================================
-             PROFILE SECTION
-        ========================================== -->
+        <!-- =================================================
+             PROFILE
+        ================================================== -->
 
         <section class="profile-section">
 
 
-            <!-- PROFILE IMAGE -->
+            <!-- Profile Photo -->
 
             <div class="profile-image-wrapper">
 
                 <div class="profile-ring"></div>
+
+
+                <!--
+                    IMPORTANT:
+                    profile.jpg ko index.html ke same folder
+                    mein rakhein.
+                -->
 
                 <img
                     src="profile.jpg"
                     alt="Hafiz Zayan Sidduqui"
                     class="profile-image"
                 >
+
 
                 <div class="verified">
                     ✓
@@ -877,21 +926,21 @@
             </div>
 
 
-            <!-- NAME -->
+            <!-- Name -->
 
             <h1>
                 HAFIZ ZAYAN SIDDUQUI
             </h1>
 
 
-            <!-- USERNAME -->
+            <!-- Username -->
 
             <div class="username">
                 @HAFIZZAYANSIDDUQUI
             </div>
 
 
-            <!-- BIO -->
+            <!-- Bio -->
 
             <p class="bio">
 
@@ -910,9 +959,9 @@
             </p>
 
 
-            <!-- =========================================
+            <!-- =================================================
                  STATS
-            ========================================== -->
+            ================================================== -->
 
             <div class="stats">
 
@@ -949,13 +998,14 @@
             </div>
 
 
-            <!-- =========================================
-                 MAIN CTA
-            ========================================== -->
+            <!-- =================================================
+                 TELEGRAM BUTTON
+            ================================================== -->
 
             <a
-                href="https://t.me/yourtelegram"
+                href="https://t.me/+z1L5BvfoIQQ0ZDA1"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="main-button"
             >
 
@@ -982,12 +1032,14 @@
         </section>
 
 
-        <!-- =========================================
+        <!-- =================================================
              FEATURES
-        ========================================== -->
+        ================================================== -->
 
         <section class="features">
 
+
+            <!-- Card 1 -->
 
             <div class="feature-card">
 
@@ -1011,6 +1063,8 @@
             </div>
 
 
+            <!-- Card 2 -->
+
             <div class="feature-card">
 
                 <div class="feature-icon">
@@ -1032,6 +1086,8 @@
 
             </div>
 
+
+            <!-- Card 3 -->
 
             <div class="feature-card">
 
@@ -1058,39 +1114,45 @@
         </section>
 
 
-        <!-- =========================================
+        <!-- =================================================
              BOTTOM CTA
-        ========================================== -->
+        ================================================== -->
 
         <section class="bottom-cta">
+
 
             <h2>
                 Ready To Start?
             </h2>
 
+
             <p>
                 Join our Telegram community and stay updated.
             </p>
 
+
             <a
-                href="https://t.me/yourtelegram"
+                href="https://t.me/+z1L5BvfoIQQ0ZDA1"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="secondary-button"
             >
                 JOIN NOW →
             </a>
 
+
         </section>
 
 
-        <!-- =========================================
+        <!-- =================================================
              FOOTER
-        ========================================== -->
+        ================================================== -->
 
         <footer>
 
             <p>
-                © <span id="year"></span>
+                ©
+                <span id="year"></span>
                 Hafiz Zayan Sidduqui
             </p>
 
@@ -1104,24 +1166,26 @@
     </main>
 
 
-    <!-- =========================================
+
+    <!-- =====================================================
          JAVASCRIPT
-    ========================================== -->
+    ====================================================== -->
 
     <script>
 
-        /* =========================================
+
+        /* =================================================
            CURRENT YEAR
-        ========================================= */
+        ================================================== */
 
         document.getElementById("year").textContent =
             new Date().getFullYear();
 
 
 
-        /* =========================================
-           CREATE BACKGROUND PARTICLES
-        ========================================= */
+        /* =================================================
+           BACKGROUND PARTICLES
+        ================================================== */
 
         const particleContainer =
             document.querySelector(".particles");
@@ -1132,25 +1196,35 @@
             const particle =
                 document.createElement("span");
 
-            particle.classList.add("particle");
+
+            particle.classList.add(
+                "particle"
+            );
+
 
             particle.style.left =
                 Math.random() * 100 + "%";
 
+
             particle.style.animationDuration =
                 (Math.random() * 10 + 8) + "s";
+
 
             particle.style.animationDelay =
                 (Math.random() * 10) + "s";
 
+
             const size =
                 Math.random() * 3 + 1;
+
 
             particle.style.width =
                 size + "px";
 
+
             particle.style.height =
                 size + "px";
+
 
             particleContainer.appendChild(
                 particle
@@ -1160,9 +1234,9 @@
 
 
 
-        /* =========================================
+        /* =================================================
            BUTTON RIPPLE EFFECT
-        ========================================= */
+        ================================================== */
 
         document
             .querySelectorAll(
@@ -1170,44 +1244,59 @@
             )
             .forEach(button => {
 
+
                 button.addEventListener(
                     "click",
                     function(e) {
 
+
                         const ripple =
                             document.createElement("span");
+
 
                         ripple.style.position =
                             "absolute";
 
+
                         ripple.style.width =
                             "10px";
+
 
                         ripple.style.height =
                             "10px";
 
+
                         ripple.style.borderRadius =
                             "50%";
+
 
                         ripple.style.background =
                             "rgba(255,255,255,0.4)";
 
+
                         ripple.style.left =
                             e.offsetX + "px";
+
 
                         ripple.style.top =
                             e.offsetY + "px";
 
+
                         ripple.style.transform =
                             "translate(-50%, -50%)";
+
 
                         ripple.style.pointerEvents =
                             "none";
 
+
                         ripple.style.animation =
                             "ripple 0.6s ease-out";
 
-                        this.appendChild(ripple);
+
+                        this.appendChild(
+                            ripple
+                        );
 
 
                         setTimeout(() => {
@@ -1216,28 +1305,32 @@
 
                         }, 600);
 
-                    });
+                    }
+
+                );
 
             });
 
 
 
-        /* =========================================
-           RIPPLE CSS
-        ========================================= */
+        /* =================================================
+           RIPPLE ANIMATION
+        ================================================== */
 
-        const style =
+        const rippleStyle =
             document.createElement("style");
 
 
-        style.innerHTML = `
+        rippleStyle.innerHTML = `
 
             @keyframes ripple {
 
                 from {
 
                     width: 10px;
+
                     height: 10px;
+
                     opacity: 1;
 
                 }
@@ -1245,7 +1338,9 @@
                 to {
 
                     width: 400px;
+
                     height: 400px;
+
                     opacity: 0;
 
                 }
@@ -1255,27 +1350,35 @@
         `;
 
 
-        document.head.appendChild(style);
+        document.head.appendChild(
+            rippleStyle
+        );
 
 
 
-        /* =========================================
-           MOUSE PARALLAX
-        ========================================= */
+        /* =================================================
+           MOUSE PARALLAX EFFECT
+        ================================================== */
 
         document.addEventListener(
             "mousemove",
             (e) => {
 
+
                 const x =
-                    (e.clientX /
+                    (
+                        e.clientX /
                         window.innerWidth -
-                        0.5) * 20;
+                        0.5
+                    ) * 20;
+
 
                 const y =
-                    (e.clientY /
+                    (
+                        e.clientY /
                         window.innerHeight -
-                        0.5) * 20;
+                        0.5
+                    ) * 20;
 
 
                 document.querySelector(
@@ -1292,8 +1395,8 @@
             }
         );
 
-    </script>
 
+    </script>
 
 </body>
 </html>
